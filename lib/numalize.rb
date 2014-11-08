@@ -4,6 +4,10 @@ module Numalize
 	@numbers
 	@text
 
+	module_function :delocalize
+	module_function :localize
+	module_function :to
+
 	def init
 		@numbers = Hash.new
 

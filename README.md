@@ -25,7 +25,7 @@ Or install it yourself as:
 
 ```ruby
 text1 = "Thai's numbers: ๑๒๓๔๕๖๗๘๙๐ (Equal to 1234567890)"
-text2 = "เอกสารหมายเลข ๕ เลขที่กำกับ ๒๓/๖ ออก ณ วันที่ ๗ กุมภาพันธ์ ๒๕๕๗"
+text2 = "เอกสารหมายเลข ๕ เลขที่กำกับ ๒๓/๖ ออก ณ วันที่ ๘ พฤษจิกายน ๒๕๕๗"
 
 text1 = Numalize.delocalize text1
 text2 = Numalize.delocalize text2
@@ -34,7 +34,7 @@ puts text1
 # Output => "Thai's numbers: 1234567890 (Equal to 1234567890)"
 
 puts text2
-# Output => "เอกสารหมายเลข 5 เลขที่กำกับ 23/6 ออก ณ วันที่ 7 กุมภาพันธ์ 2557"
+# Output => "เอกสารหมายเลข 5 เลขที่กำกับ 23/6 ออก ณ วันที่ 8 พฤษจิกายน 2557"
 
 text1 = Numalize.localize(text1).to "thai"
 text2 = Numalize.localize(text2).to "thai"
@@ -43,7 +43,7 @@ puts text1
 # Output => "Thai's numbers: ๑๒๓๔๕๖๗๘๙๐ (Equal to ๑๒๓๔๕๖๗๘๙๐)"
 
 puts text2
-"เอกสารหมายเลข ๕ เลขที่กำกับ ๒๓/๖ ออก ณ วันที่ ๗ กุมภาพันธ์ ๒๕๕๗"
+# Output => "เอกสารหมายเลข ๕ เลขที่กำกับ ๒๓/๖ ออก ณ วันที่ ๘ พฤษจิกายน ๒๕๕๗"
 ```
 
 ## Contributing
